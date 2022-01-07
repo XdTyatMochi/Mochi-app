@@ -3126,11 +3126,6 @@ blakejs@^1.1.0:
   resolved "https://registry.yarnpkg.com/blakejs/-/blakejs-1.1.1.tgz#bf313053978b2cd4c444a48795710be05c785702"
   integrity sha512-bLG6PHOCZJKNshTjGRBvET0vTciwQE6zFKOKKXPDJfwFBd4Ac0yBfPZqcGvGJap50l7ktvlpFqc2jGVaUgbJgg==
 
-blockchain-addressbook@^0.4.42:
-  version "0.4.42"
-  resolved "https://registry.yarnpkg.com/blockchain-addressbook/-/blockchain-addressbook-0.4.42.tgz#bbbf3dbfefad85d5762e1483f0c874abe87ef064"
-  integrity sha512-DQEeKGPm1G6jc5HnT7YC6e6/FwnROfmZTjJz+IG7NqJId9QkzUTcuNf5XsD8cUeiZ9+z4qhceoJHQU2q6JHfuQ==
-
 bluebird@^3.5.0, bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
@@ -8873,6 +8868,11 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.5, mkdirp@~0.5.1:
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
+
+mochifarmxyz-addressbook@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/mochifarmxyz-addressbook/-/mochifarmxyz-addressbook-0.4.2.tgz#7a6fa152b5a8f381a192a4681daf4a7ee73aca0c"
+  integrity sha512-vFB3Eas4tJcqDVtGSyAGpRN9STMkn7lVBUdVwoPj4wGDuTdNGubAjgJXkf64TFDte6r3jJtCbDtBlLJ+ahXFgQ==
 
 mock-fs@^4.1.0:
   version "4.14.0"
