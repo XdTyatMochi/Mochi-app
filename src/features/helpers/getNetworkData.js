@@ -61,18 +61,18 @@ export const getNetworkTokens = () => {
   }
 };
 
-export const getNetworkBurnTokens = () => {
-  switch (window.REACT_APP_NETWORK_ID) {
-    case 288:
-      return {
-        [bobaAddressBook.tokens.TOMB.symbol]: bobaAddressBook.tokens.TOMB,
-        [bobaAddressBook.tokens.fSING.symbol]: bobaAddressBook.tokens.fSING,
-        [bobaAddressBook.tokens.PEAR.symbol]: bobaAddressBook.tokens.PEAR,
-      };
-    default:
-      throw new Error(`Create address book for this chainId first.`);
-  }
-};
+// export const getNetworkBurnTokens = () => {
+//   switch (window.REACT_APP_NETWORK_ID) {
+//     case 288:
+//       return {
+//         [bobaAddressBook.tokens.TOMB.symbol]: bobaAddressBook.tokens.TOMB,
+//         [bobaAddressBook.tokens.fSING.symbol]: bobaAddressBook.tokens.fSING,
+//         [bobaAddressBook.tokens.PEAR.symbol]: bobaAddressBook.tokens.PEAR,
+//       };
+//     default:
+//       throw new Error(`Create address book for this chainId first.`);
+//   }
+// };
 
 export const getNetworkZaps = () => {
   switch (window.REACT_APP_NETWORK_ID) {

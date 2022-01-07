@@ -1,6 +1,6 @@
-import { addressBook } from 'blockchain-addressbook';
+import { addressBook } from 'mochifarmxyz-addressbook';
 
-const { fantom: bobaAddressBook } = addressBook;
+const { boba: bobaAddressBook } = addressBook;
 export { bobaAddressBook };
 
 export {

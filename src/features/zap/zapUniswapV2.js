@@ -2,14 +2,14 @@ import { pack, keccak256 } from '@ethersproject/solidity';
 import { getCreate2Address } from '@ethersproject/address';
 import {
   getNetworkTokens,
-  getNetworkBurnTokens,
+  // getNetworkBurnTokens,
   getNetworkZaps,
   getNetworkCoin,
 } from 'features/helpers/getNetworkData';
 
 const availableZaps = getNetworkZaps();
 const availableTokens = getNetworkTokens();
-const burnTokens = getNetworkBurnTokens();
+// const burnTokens = getNetworkBurnTokens();
 const nativeCoin = getNetworkCoin();
 
 export const getEligibleZap = pool => {
@@ -53,8 +53,8 @@ export const getEligibleZap = pool => {
     console.error('Mochi: token missing in the tokenlist:', symbol);
   }
 
-  const pairHasBurnToken = tokenASymbol in burnTokens || tokenBSymbol in burnTokens;
-  if (!zap || pairHasBurnToken) return undefined;
+  // const pairHasBurnToken = tokenASymbol in burnTokens || tokenBSymbol in burnTokens;
+  // if (!zap || pairHasBurnToken) return undefined;
 
   tokenA.allowance = 0;
   tokenB.allowance = 0;

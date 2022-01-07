@@ -1,6 +1,6 @@
 // To run: yarn validate
 import { MultiCall } from 'eth-multicall';
-import { addressBook } from '../mochi-blockchain-addressbook';
+import { addressBook } from 'mochifarmxyz-addressbook';
 import Web3 from 'web3';
 
 import { isEmpty } from '../src/features/helpers/utils.js';
