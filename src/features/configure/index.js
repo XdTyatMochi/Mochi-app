@@ -1,4 +1,4 @@
-import { addressBook } from '../../mochi-blockchain-addressbook/build/address-book';
+import { addressBook } from 'blockchain-addressbook';
 
 const { fantom: bobaAddressBook } = addressBook;
 export { bobaAddressBook };
