@@ -98,7 +98,7 @@ export const bobaPools = [
     depositsPaused: false,
     status: 'active',
     platform: 'OolongSwap',
-    assets: ['FTM', 'WETH'], //change the assets
+    assets: ['WETH', 'FTM'], //change the assets
     withdrawalFee: '0%',
     risks: ['COMPLEXITY_LOW', 'BATTLE_TESTED', 'IL_LOW', 'MCAP_LOW', 'AUDIT', 'CONTRACTS_VERIFIED'],
     stratType: 'StratLP',
