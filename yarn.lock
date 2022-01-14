@@ -8869,10 +8869,10 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.5, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
-mochifarmxyz-addressbook@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/mochifarmxyz-addressbook/-/mochifarmxyz-addressbook-0.4.2.tgz#7a6fa152b5a8f381a192a4681daf4a7ee73aca0c"
-  integrity sha512-vFB3Eas4tJcqDVtGSyAGpRN9STMkn7lVBUdVwoPj4wGDuTdNGubAjgJXkf64TFDte6r3jJtCbDtBlLJ+ahXFgQ==
+mochifarmxyz-addressbook@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/mochifarmxyz-addressbook/-/mochifarmxyz-addressbook-0.4.5.tgz#f3879d5dc250597cbf22f767500779bae5117bc3"
+  integrity sha512-0+NQc87EmOAxqKTNPM8KHjECE6rJVp+sSGRT5VCIdFns+eLyBgn5D61hVlYiFDxQIz6VPFmTSTRyiZzGhsxd0g==
 
 mock-fs@^4.1.0:
   version "4.14.0"

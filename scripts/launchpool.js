@@ -9,7 +9,7 @@ import { chainPools, chainRpcs } from './config.js';
 async function boostParams(chain, boostAddress) {
   const web3 = new Web3(chainRpcs[chain]);
   const boostContract = new web3.eth.Contract(launchPoolABI, boostAddress);
-  const multicall = new MultiCall(web3, addressBook[chain].platforms.Beefyfinance.multicall);
+  const multicall = new MultiCall(web3, addressBook[chain].platforms.mochi.multicall);
   let calls = [
     {
       staked: boostContract.methods.stakedToken(),

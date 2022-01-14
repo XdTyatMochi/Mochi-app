@@ -10,7 +10,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import InputLabel from '@material-ui/core/InputLabel';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import TextField from '@material-ui/core/TextField';
-import { Avatar, Box, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 import styles from './styles';
 import { assets, platforms } from './constants';

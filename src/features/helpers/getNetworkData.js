@@ -1,4 +1,4 @@
-import { connectors } from 'web3modal';
+// import { connectors } from 'web3modal';
 import { indexBy } from './utils';
 import WalletConnectProvider from '@walletconnect/web3-provider';
 
@@ -16,7 +16,7 @@ const networkFriendlyName = {
 };
 
 const networkBuyUrls = {
-  288: 'https://spookyswap.finance/swap?inputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75&outputCurrency=0xd6070ae98b8069de6B494332d1A1a81B6179D960',
+  288: 'https://oolongswap.com/#/swap',
 };
 
 export const getNetworkCoin = () => {
@@ -95,7 +95,7 @@ export const getNetworkStables = () => {
 export const getNetworkMulticall = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 288:
-      return '0xC9F6b1B53E056fd04bE5a197ce4B2423d456B982';
+      return '0x7E2f7eC8381AD1481F5376f896769e2f1ef34196';
     default:
       return '';
   }
@@ -105,7 +105,7 @@ export const getNetworkConnectors = t => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 288:
       return {
-        network: 'boba Test Net',
+        network: 'Boba Mainnet',
         cacheProvider: true,
         providerOptions: {
           injected: {
@@ -118,8 +118,8 @@ export const getNetworkConnectors = t => {
           //   package: WalletConnectProvider,
           //   options: {
           //     rpc: {
-          //       1: 'https://rpcapi.fantom.network',
-          //       288: 'https://rpcapi.fantom.network',
+          //       1: 'https://mainnet.boba.network/',
+          //       288: 'https://mainnet.boba.network/',
           //     },
           //   },
           // },

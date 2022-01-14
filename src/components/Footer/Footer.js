@@ -45,7 +45,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://github.com/Beefyfinance"
+          href="https://github.com/mochifarm"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -58,7 +58,7 @@ const Footer = () => {
       <div className={classes.column}>
         <div className={classes.title}>{t('socials')}</div>
         <a
-          href="https://twitter.com/Beefyfinance"
+          href="https://twitter.com/mochifarm"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -68,7 +68,7 @@ const Footer = () => {
           <span>twitter</span>
         </a>
         <a
-          href="https://t.me/Beefyfinance"
+          href="https://t.me/mochifarm"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}

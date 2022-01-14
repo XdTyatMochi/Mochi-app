@@ -1,5 +1,5 @@
 import React, { memo, useCallback, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,9 +11,9 @@ import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
 import Menu from '@material-ui/icons/Menu';
 import Close from '@material-ui/icons/Close';
-import WbSunny from '@material-ui/icons/WbSunny';
-import NightsStay from '@material-ui/icons/NightsStay';
-import { getNetworkBuyUrl } from '../../features/helpers/getNetworkData';
+// import WbSunny from '@material-ui/icons/WbSunny';
+// import NightsStay from '@material-ui/icons/NightsStay';
+// import { getNetworkBuyUrl } from '../../features/helpers/getNetworkData';
 import { Dialog, withStyles } from '@material-ui/core';
 import CustomButton from '../../components/CustomButtons/Button';
 import styles from './styles';
@@ -35,7 +35,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
 
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const classes = useStyles();
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -131,9 +131,9 @@ const Header = ({ links, isNightMode, setNightMode }) => {
   );
 };
 
-const InsureLinkSidebar = memo(function InsureLinkSidebar(props) {
-  return <div style={{ width: '100%', paddingTop: '10px' }}>{/* <InsureLink {...props} /> */}</div>;
-});
+// const InsureLinkSidebar = memo(function InsureLinkSidebar(props) {
+//   return <div style={{ width: '100%', paddingTop: '10px' }}>{/* <InsureLink {...props} /> */}</div>;
+// });
 
 const InsureLink = memo(function InsureLink({ t, classes }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -187,27 +187,27 @@ const InsureLink = memo(function InsureLink({ t, classes }) {
   );
 });
 
-const renderLink = (name, label, icon, classes) => {
-  return (
-    <a
-      href={getLinkUrl(name)}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={classes.link}
-      style={{ marginLeft: '5px', marginRight: '5px' }}
-    >
-      <i className={`fas fa-${icon} ${classes.icon}`} />
-      <span>{label}</span>
-    </a>
-  );
-};
+// const renderLink = (name, label, icon, classes) => {
+//   return (
+//     <a
+//       href={getLinkUrl(name)}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       className={classes.link}
+//       style={{ marginLeft: '5px', marginRight: '5px' }}
+//     >
+//       <i className={`fas fa-${icon} ${classes.icon}`} />
+//       <span>{label}</span>
+//     </a>
+//   );
+// };
 
-const LinkSidebar = ({ name, label, icon, classes }) => (
-  <div style={{ width: '100%', paddingTop: '10px' }}>{renderLink(name, label, icon, classes)}</div>
-);
+// const LinkSidebar = ({ name, label, icon, classes }) => (
+//   <div style={{ width: '100%', paddingTop: '10px' }}>{renderLink(name, label, icon, classes)}</div>
+// );
 
-const getLinkUrl = name => {
-  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.Beefy.finance`;
-};
+// const getLinkUrl = name => {
+//   return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.Beefy.finance`;
+// };
 
 export default Header;

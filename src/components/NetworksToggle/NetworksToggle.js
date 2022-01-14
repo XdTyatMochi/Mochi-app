@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useMemo, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { getSingleAssetSrc } from '../../features/helpers/getSingleAssetSrc';
+// import { getSingleAssetSrc } from '../../features/helpers/getSingleAssetSrc';
 import NetworksModal from '../NetworksModal/NetworksModal';
 import { allNetworks } from '../../network';
 import styles from './styles';
@@ -21,11 +21,11 @@ const NetworksToggle = memo(function () {
   return (
     <>
       <div className={classes.container} onClick={handleOpen}>
-        <img
+        {/* <img
         // className={classes.logo}
         // src={getSingleAssetSrc(currentNetwork.asset)}
         // alt={`${currentNetwork.asset} logo`}
-        />
+        /> */}
         <div className={classes.tag}>
           {/* <div className={classes.connected} />
           <p className={classes.networkName}>{currentNetwork.name}</p> */}
