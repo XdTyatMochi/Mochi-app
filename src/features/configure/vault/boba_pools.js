@@ -61,8 +61,8 @@ export const bobaPools = [
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'mochiMATIC-WETH',
-    earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+    earnedTokenAddress: '0x7cAEAf0C73fE00c52DF3449B02f5B1281Bd1d295', //needs to be changed
+    earnContractAddress: '0x7cAEAf0C73fE00c52DF3449B02f5B1281Bd1d295', //needs to be changed
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
@@ -79,87 +79,87 @@ export const bobaPools = [
       'https://oolongswap.com/#/add/0x922D641a426DcFFaeF11680e5358F34d97d112E1/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
     buyTokenUrl: 'https://oolongswap.com/#/swap',
   },
-  {
-    id: 'oolong-weth-ftm',
-    name: 'WETH-FTM LP',
-    token: 'WETH-FTM LP',
-    tokenDescription: 'OolongSwap',
-    tokenAddress: '0x62a51506a3c70e0d9944bc0d35b7f3560e69039d',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'mochiWETH-FTM',
-    earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'oolong-weth-ftm',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'OolongSwap',
-    assets: ['WETH', 'FTM'], //change the assets
-    withdrawalFee: '0%',
-    risks: ['COMPLEXITY_LOW', 'BATTLE_TESTED', 'IL_LOW', 'MCAP_LOW', 'AUDIT', 'CONTRACTS_VERIFIED'],
-    stratType: 'StratLP',
-    addLiquidityUrl:
-      'https://oolongswap.com/#/add/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000/0xeFAeeE334F0Fd1712f9a8cc375f427D9Cdd40d73',
-    buyTokenUrl: 'https://oolongswap.com/#/swap',
-  },
-  {
-    id: 'oolong-bnb-weth',
-    name: 'BNB-WETH LP',
-    token: 'BNB-WETH LP',
-    tokenDescription: 'OolongSwap',
-    tokenAddress: '0x7ecaddb89637b1b0a83693cd5c54432aff6c61a0',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'mochiBNB-WETH',
-    earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'oolong-bnb-weth',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'OolongSwap',
-    assets: ['BNB', 'WETH'], //change the assets
-    withdrawalFee: '0%',
-    risks: ['COMPLEXITY_LOW', 'BATTLE_TESTED', 'IL_LOW', 'MCAP_LOW', 'AUDIT', 'CONTRACTS_VERIFIED'],
-    stratType: 'StratLP',
-    addLiquidityUrl:
-      'https://oolongswap.com/#/add/0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
-    buyTokenUrl: 'https://oolongswap.com/#/swap',
-  },
-  {
-    id: 'oolong-weth-avax',
-    name: 'WETH-AVAX LP',
-    token: 'WETH-AVAX LP',
-    tokenDescription: 'OolongSwap',
-    tokenAddress: '0x0e971c131bbb7347016fb24fc4b3f93f894f3e61',
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'mochiWETH-AVAX',
-    earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'lps',
-    oracleId: 'oolong-weth-avax',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'OolongSwap',
-    assets: ['WETH', 'AVAX'], //change the assets
-    withdrawalFee: '0%',
-    risks: ['COMPLEXITY_LOW', 'BATTLE_TESTED', 'IL_LOW', 'MCAP_LOW', 'AUDIT', 'CONTRACTS_VERIFIED'],
-    stratType: 'StratLP',
-    addLiquidityUrl:
-      'https://oolongswap.com/#/add/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000/0xfA9343C3897324496A05fC75abeD6bAC29f8A40f',
-    buyTokenUrl: 'https://oolongswap.com/#/swap',
-  },
+  // {
+  //   id: 'oolong-weth-ftm',
+  //   name: 'WETH-FTM LP',
+  //   token: 'WETH-FTM LP',
+  //   tokenDescription: 'OolongSwap',
+  //   tokenAddress: '0x62a51506a3c70e0d9944bc0d35b7f3560e69039d',
+  //   tokenDecimals: 18,
+  //   tokenDescriptionUrl: '#',
+  //   earnedToken: 'mochiWETH-FTM',
+  //   earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+  //   earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+  //   pricePerFullShare: 1,
+  //   tvl: 0,
+  //   oracle: 'lps',
+  //   oracleId: 'oolong-weth-ftm',
+  //   oraclePrice: 0,
+  //   depositsPaused: false,
+  //   status: 'active',
+  //   platform: 'OolongSwap',
+  //   assets: ['WETH', 'FTM'], //change the assets
+  //   withdrawalFee: '0%',
+  //   risks: ['COMPLEXITY_LOW', 'BATTLE_TESTED', 'IL_LOW', 'MCAP_LOW', 'AUDIT', 'CONTRACTS_VERIFIED'],
+  //   stratType: 'StratLP',
+  //   addLiquidityUrl:
+  //     'https://oolongswap.com/#/add/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000/0xeFAeeE334F0Fd1712f9a8cc375f427D9Cdd40d73',
+  //   buyTokenUrl: 'https://oolongswap.com/#/swap',
+  // },
+  // {
+  //   id: 'oolong-bnb-weth',
+  //   name: 'BNB-WETH LP',
+  //   token: 'BNB-WETH LP',
+  //   tokenDescription: 'OolongSwap',
+  //   tokenAddress: '0x7ecaddb89637b1b0a83693cd5c54432aff6c61a0',
+  //   tokenDecimals: 18,
+  //   tokenDescriptionUrl: '#',
+  //   earnedToken: 'mochiBNB-WETH',
+  //   earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+  //   earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+  //   pricePerFullShare: 1,
+  //   tvl: 0,
+  //   oracle: 'lps',
+  //   oracleId: 'oolong-bnb-weth',
+  //   oraclePrice: 0,
+  //   depositsPaused: false,
+  //   status: 'active',
+  //   platform: 'OolongSwap',
+  //   assets: ['BNB', 'WETH'], //change the assets
+  //   withdrawalFee: '0%',
+  //   risks: ['COMPLEXITY_LOW', 'BATTLE_TESTED', 'IL_LOW', 'MCAP_LOW', 'AUDIT', 'CONTRACTS_VERIFIED'],
+  //   stratType: 'StratLP',
+  //   addLiquidityUrl:
+  //     'https://oolongswap.com/#/add/0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+  //   buyTokenUrl: 'https://oolongswap.com/#/swap',
+  // },
+  // {
+  //   id: 'oolong-weth-avax',
+  //   name: 'WETH-AVAX LP',
+  //   token: 'WETH-AVAX LP',
+  //   tokenDescription: 'OolongSwap',
+  //   tokenAddress: '0x0e971c131bbb7347016fb24fc4b3f93f894f3e61',
+  //   tokenDecimals: 18,
+  //   tokenDescriptionUrl: '#',
+  //   earnedToken: 'mochiWETH-AVAX',
+  //   earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+  //   earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+  //   pricePerFullShare: 1,
+  //   tvl: 0,
+  //   oracle: 'lps',
+  //   oracleId: 'oolong-weth-avax',
+  //   oraclePrice: 0,
+  //   depositsPaused: false,
+  //   status: 'active',
+  //   platform: 'OolongSwap',
+  //   assets: ['WETH', 'AVAX'], //change the assets
+  //   withdrawalFee: '0%',
+  //   risks: ['COMPLEXITY_LOW', 'BATTLE_TESTED', 'IL_LOW', 'MCAP_LOW', 'AUDIT', 'CONTRACTS_VERIFIED'],
+  //   stratType: 'StratLP',
+  //   addLiquidityUrl:
+  //     'https://oolongswap.com/#/add/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000/0xfA9343C3897324496A05fC75abeD6bAC29f8A40f',
+  //   buyTokenUrl: 'https://oolongswap.com/#/swap',
+  // },
   // {
   //   id: 'oolong-boba-weth',
   //   logo: 'single-assets/DAI.svg',
