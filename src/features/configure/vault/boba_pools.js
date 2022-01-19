@@ -33,9 +33,9 @@ export const bobaPools = [
     tokenAddress: '0x077c28868b84c4b420638ef97041764effbb2428',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'mochiBOBA-WETH',
-    earnedTokenAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
-    earnContractAddress: '0xe91D023D0ed9Adab2aF60176eF2B51bdD001a850', //needs to be changed
+    earnedToken: 'mochioolongBOBA-WETH',
+    earnedTokenAddress: '0x112A92999B90A7Ea21721E6a62b64Dc0b6aAC98a', //needs to be changed
+    earnContractAddress: '0x112A92999B90A7Ea21721E6a62b64Dc0b6aAC98a', //needs to be changed
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
