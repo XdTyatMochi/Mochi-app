@@ -60,7 +60,7 @@ export const bobaPools = [
     tokenAddress: '0x1e20184f850dec2b701a3e2bcaf4236c4d1d4345',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'mochiMATIC-WETH',
+    earnedToken: 'mochioolongMATIC-WETH',
     earnedTokenAddress: '0x7cAEAf0C73fE00c52DF3449B02f5B1281Bd1d295', //needs to be changed
     earnContractAddress: '0x7cAEAf0C73fE00c52DF3449B02f5B1281Bd1d295', //needs to be changed
     pricePerFullShare: 1,
