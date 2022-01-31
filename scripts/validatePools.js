@@ -12,12 +12,12 @@ const overrides = {
   // 'bunny-bunny-eol': { keeper: undefined, stratOwner: undefined },
   // 'blizzard-xblzd-bnb-old-eol': { keeper: undefined },
   // 'blizzard-xblzd-busd-old-eol': { keeper: undefined },
-  // 'heco-bifi-maxi': { MochiFeeRecipient: undefined }, // 0x0
-  // 'polygon-bifi-maxi': { MochiFeeRecipient: undefined }, // 0x0
-  // 'avax-bifi-maxi': { MochiFeeRecipient: undefined }, // 0x0
+  // 'heco-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
+  // 'polygon-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
+  // 'avax-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
   // 'bifi-maxi': { stratOwner: undefined }, // harvester 0xDe30
   // 'beltv2-4belt': { vaultOwner: undefined }, // moonpot deployer
-  // 'cronos-bifi-maxi': { MochiFeeRecipient: undefined }, // 0x0
+  // 'cronos-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
 };
 
 const oldValidOwners = [addressBook.boba.platforms.mochi.devMultisig];
@@ -50,7 +50,7 @@ const validatePools = async () => {
     const web3 = new Web3(chainRpcs[chain]);
     pools = await populateStrategyAddrs(chain, pools, web3);
     pools = await populateKeepers(chain, pools, web3);
-    pools = await populateMochiFeeRecipients(chain, pools, web3);
+    pools = await populatemochiFeeRecipients(chain, pools, web3);
     pools = await populateOwners(chain, pools, web3);
 
     pools = override(pools);
@@ -122,13 +122,13 @@ const validatePools = async () => {
       uniqueEarnedTokenAddress.add(pool.earnedTokenAddress);
       uniqueOracleId.add(pool.oracleId);
 
-      const { keeper, strategyOwner, vaultOwner, MochiFeeRecipient } =
+      const { keeper, strategyOwner, vaultOwner, mochiFeeRecipient } =
         addressBook[chain].platforms.mochi;
 
       updates = isKeeperCorrect(pool, chain, keeper, updates);
       updates = isStratOwnerCorrect(pool, chain, strategyOwner, updates);
       updates = isVaultOwnerCorrect(pool, chain, vaultOwner, updates);
-      updates = isMochiFeeRecipientCorrect(pool, chain, MochiFeeRecipient, updates);
+      updates = ismochiFeeRecipientCorrect(pool, chain, mochiFeeRecipient, updates);
     });
     if (!isEmpty(updates)) {
       exitCode = 1;
@@ -208,25 +208,25 @@ const isVaultOwnerCorrect = (pool, chain, owner, updates) => {
   return updates;
 };
 
-const isMochiFeeRecipientCorrect = (pool, chain, recipient, updates) => {
+const ismochiFeeRecipientCorrect = (pool, chain, recipient, updates) => {
   const validRecipients = oldValidFeeRecipients[chain] || [];
   if (
     pool.status === 'active' &&
-    pool.MochiFeeRecipient !== undefined &&
-    pool.MochiFeeRecipient !== recipient &&
-    !validRecipients.includes(pool.MochiFeeRecipient)
+    pool.mochiFeeRecipient !== undefined &&
+    pool.mochiFeeRecipient !== recipient &&
+    !validRecipients.includes(pool.mochiFeeRecipient)
   ) {
     console.log(
-      `Pool ${pool.id} should update Beefy fee recipient. From: ${pool.MochiFeeRecipient} To: ${recipient}`
+      `Pool ${pool.id} should update Beefy fee recipient. From: ${pool.mochiFeeRecipient} To: ${recipient}`
     );
 
-    if (!('MochiFeeRecipient' in updates)) updates['MochiFeeRecipient'] = {};
-    if (!(chain in updates.MochiFeeRecipient)) updates.MochiFeeRecipient[chain] = {};
+    if (!('mochiFeeRecipient' in updates)) updates['mochiFeeRecipient'] = {};
+    if (!(chain in updates.mochiFeeRecipient)) updates.mochiFeeRecipient[chain] = {};
 
-    if (pool.stratOwner in updates.MochiFeeRecipient[chain]) {
-      updates.MochiFeeRecipient[chain][pool.stratOwner].push(pool.strategy);
+    if (pool.stratOwner in updates.mochiFeeRecipient[chain]) {
+      updates.mochiFeeRecipient[chain][pool.stratOwner].push(pool.strategy);
     } else {
-      updates.MochiFeeRecipient[chain][pool.stratOwner] = [pool.strategy];
+      updates.mochiFeeRecipient[chain][pool.stratOwner] = [pool.strategy];
     }
   }
 
@@ -269,20 +269,20 @@ const populateKeepers = async (chain, pools, web3) => {
   });
 };
 
-const populateMochiFeeRecipients = async (chain, pools, web3) => {
+const populatemochiFeeRecipients = async (chain, pools, web3) => {
   const multicall = new MultiCall(web3, addressBook[chain].platforms.mochi.multicall);
 
   const calls = pools.map(pool => {
     const stratContract = new web3.eth.Contract(strategyABI, pool.strategy);
     return {
-      MochiFeeRecipient: stratContract.methods.MochiFeeRecipient(),
+      mochiFeeRecipient: stratContract.methods.mochiFeeRecipient(),
     };
   });
 
   const [results] = await multicall.all([calls]);
 
   return pools.map((pool, i) => {
-    return { ...pool, MochiFeeRecipient: results[i].MochiFeeRecipient };
+    return { ...pool, mochiFeeRecipient: results[i].mochiFeeRecipient };
   });
 };
 
