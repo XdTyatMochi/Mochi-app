@@ -30,7 +30,7 @@ const fetchTokens = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`http://localhost:4000/prices?_=${cacheBuster}`);
+    const response = await axios.get(`http://mochifarm.xyz:4000/prices?_=${cacheBuster}`);
     return response.data;
   } catch (err) {
     console.error(err);
@@ -42,7 +42,7 @@ const fetchLPs = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`http://localhost:4000/lps?_=${cacheBuster}`);
+    const response = await axios.get(`http://mochifarm.xyz:4000/lps?_=${cacheBuster}`);
     return response.data;
   } catch (err) {
     console.error(err);
