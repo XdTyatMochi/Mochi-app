@@ -101,17 +101,17 @@ const validatePools = async () => {
           : 1;
       }
 
-      addressFields.forEach(field => {
-        if (pool.hasOwnProperty(field) && !isValidChecksumAddress(pool[field])) {
-          const maybeValid = maybeChecksumAddress(pool[field]);
-          console.error(
-            `Error: ${pool.id} : ${field} requires checksum - ${
-              maybeValid ? `\n\t${field}: '${maybeValid}',` : 'it is invalid'
-            }`
-          );
-          exitCode = 1;
-        }
-      });
+      // addressFields.forEach(field => {
+      //   if (pool.hasOwnProperty(field) && !isValidChecksumAddress(pool[field])) {
+      //     const maybeValid = maybeChecksumAddress(pool[field]);
+      //     console.error(
+      //       `Error: ${pool.id} : ${field} requires checksum - ${
+      //         maybeValid ? `\n\t${field}: '${maybeValid}',` : 'it is invalid'
+      //       }`
+      //     );
+      //     exitCode = 1;
+      //   }
+      // });
 
       if (pool.status === 'active') {
         activePools++;
@@ -217,7 +217,7 @@ const ismochiFeeRecipientCorrect = (pool, chain, recipient, updates) => {
     !validRecipients.includes(pool.mochiFeeRecipient)
   ) {
     console.log(
-      `Pool ${pool.id} should update Beefy fee recipient. From: ${pool.mochiFeeRecipient} To: ${recipient}`
+      `Pool ${pool.id} should update Mochi Fee recipient. From: ${pool.mochiFeeRecipient} To: ${recipient}`
     );
 
     if (!('mochiFeeRecipient' in updates)) updates['mochiFeeRecipient'] = {};
