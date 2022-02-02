@@ -16,7 +16,7 @@ export function fetchApys() {
 
     return new Promise((resolve, reject) => {
       const cacheBuster = getApiCacheBuster();
-      const doRequest = axios.get(`http://api.mochifarm.xyz:4000/apy/breakdown?_=${cacheBuster}`);
+      const doRequest = axios.get(`http://api.mochifarm.xyz/apy/breakdown?_=${cacheBuster}`);
 
       doRequest.then(
         res => {
