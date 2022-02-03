@@ -53,7 +53,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
                 height={'40px'}
                 className={classes.logo}
               />
-              mochi.farm
+              mochifarm.xyz
             </Hidden>
             <Hidden smUp>
               <img
