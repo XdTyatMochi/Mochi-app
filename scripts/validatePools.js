@@ -8,17 +8,7 @@ import { isValidChecksumAddress, maybeChecksumAddress } from './utils.js';
 import { vaultABI, strategyABI } from '../src/features/configure/abi.js';
 import { chainPools, chainRpcs } from './config.js';
 
-const overrides = {
-  // 'bunny-bunny-eol': { keeper: undefined, stratOwner: undefined },
-  // 'blizzard-xblzd-bnb-old-eol': { keeper: undefined },
-  // 'blizzard-xblzd-busd-old-eol': { keeper: undefined },
-  // 'heco-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
-  // 'polygon-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
-  // 'avax-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
-  // 'bifi-maxi': { stratOwner: undefined }, // harvester 0xDe30
-  // 'beltv2-4belt': { vaultOwner: undefined }, // moonpot deployer
-  // 'cronos-bifi-maxi': { mochiFeeRecipient: undefined }, // 0x0
-};
+const overrides = {};
 
 const oldValidOwners = [addressBook.boba.platforms.mochi.devMultisig];
 

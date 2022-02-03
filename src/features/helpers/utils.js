@@ -31,7 +31,6 @@ export const shouldHideFromHarvest = vaultName => {
 };
 
 // const HarvestBlacklistVaultIds = [
-//   'bifi-maxi',
 //   'fortube-fil',
 //   'fortube-atom',
 //   'fortube-xtz',

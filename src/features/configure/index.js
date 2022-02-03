@@ -10,7 +10,7 @@ export {
   strategyABI,
   multicallABI,
   govPoolABI,
-  BeefyUniV2ZapABI,
+  MochiUniV2ZapABI,
   uniswapV2PairABI,
   uniswapV2RouterABI,
   launchPoolABI,

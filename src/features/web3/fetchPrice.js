@@ -72,7 +72,6 @@ export function initializePriceCache() {
     oracleToIds.get(pool.oracle).push(pool.oracleId);
   });
 
-  // BIFI should always be fetched
   if (!oracleToIds.has('tokens')) {
     oracleToIds.set('tokens', []);
   }

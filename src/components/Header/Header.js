@@ -48,8 +48,8 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           <Button className={classes.title}>
             <Hidden xsDown>
               <img
-                alt="BIFI"
-                src={require(`images/BIFI-logo.svg`)}
+                alt="MOCHI"
+                src={require(`images/Mochi-logo.svg`)}
                 height={'40px'}
                 className={classes.logo}
               />
@@ -57,8 +57,8 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             </Hidden>
             <Hidden smUp>
               <img
-                alt="BIFI"
-                src={require(`images/BIFI-logo.svg`)}
+                alt="MOCHI"
+                src={require(`images/Mochi-logo.svg`)}
                 height={'35px'}
                 className={classes.logo}
               />
@@ -207,7 +207,7 @@ const InsureLink = memo(function InsureLink({ t, classes }) {
 // );
 
 // const getLinkUrl = name => {
-//   return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.Beefy.finance`;
+//   return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.mochifarm.xyz`;
 // };
 
 export default Header;

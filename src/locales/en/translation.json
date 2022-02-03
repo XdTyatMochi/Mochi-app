@@ -23,7 +23,6 @@
   "Vault-ApproveButton": "Approve",
   "Vault-ApprovalSuccess": "Approval success",
   "Vault-ApprovalError": "Approval error: {{error}}",
-  "Vault-BifiBuyback": "",
   "Vault-DepositButton": "Deposit",
   "Vault-DepositButtonAll": "Deposit All",
   "Vault-DepositTokensNote": "You will receive {{mooToken}} token as a receipt for your deposited {{assetToken}} assets. This token is needed to withdraw your {{assetToken}}, do not trade or transfer {{mooToken}} to strangers!",
@@ -34,7 +33,7 @@
   "Vault-DepositScenario": "Deposit will result in:",
   "Vault-DepositScenarioSwap": "To balance a liquidity pair, swap {{swapIn}} for {{swapOut}} (±{{slippageTolerance}} slippage and deposit fee, if any)",
   "Vault-DepositScenarioAddLiquidity": "Add liquidity to receive {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Deposit received {{poolToken}} into Beefy vault",
+  "Vault-DepositScenarioDepositToVault": "Deposit received {{poolToken}} into Mochi vault",
   "Vault-DepositScenarioReturnDust": "Return unused trace amounts of {{tokenA}} and {{tokenB}} to your wallet",
   "Vault-Withdrawing": "Withdrawing...",
   "Vault-WithdrawButton": "Withdraw",
@@ -163,14 +162,14 @@
     {
       "title": "How it works",
       "content": [
-        "Beefy contracts deposit tokens on your behalf, to underlying platforms, for example Pancakeswap, TraderJoe, or Spookyswap. If one of Beefy’s smart contracts fails (for example our vault contract, or the strategy contract) and you were paying for coverage, InsurAce will cover your loss.",
+        "Mochi contracts deposit tokens on your behalf, to underlying platforms, for example Pancakeswap, TraderJoe, or Spookyswap. If one of Mochi’s smart contracts fails (for example our vault contract, or the strategy contract) and you were paying for coverage, InsurAce will cover your loss.",
         "Contrarily if the smart contract that fails belongs to the underlying platform (Pancakeswap, Traderjoe, Spookyswap) your deposits won’t be covered."
       ]
     },
     {
       "title": "What is the premium?",
       "content": [
-        "2.9% annually. Use our custom Beefy link to enjoy a 10% discount (paid in Insur Token)."
+        "2.9% annually. Use our custom Mochi link to enjoy a 10% discount (paid in Insur Token)."
       ]
     }
   ],

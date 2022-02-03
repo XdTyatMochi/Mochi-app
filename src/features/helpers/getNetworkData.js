@@ -55,9 +55,7 @@ export const getNetworkTokens = () => {
     case 288:
       return bobaAddressBook.tokens;
     default:
-      throw new Error(
-        `Create address book for chainId(${chainId}) first. Check out https://github.com/Beefyfinance/address-book`
-      );
+      throw new Error(`Create address book for chainId(${chainId}) first.`);
   }
 };
 

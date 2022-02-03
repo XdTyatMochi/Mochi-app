@@ -1,4 +1,4 @@
-import { BeefyUniV2ZapABI } from '../configure';
+import { MochiUniV2ZapABI } from '../configure';
 import { enqueueSnackbar } from '../common/redux/actions';
 
 export const zapDeposit = async ({
@@ -12,7 +12,7 @@ export const zapDeposit = async ({
   swapAmountOutMin,
   dispatch,
 }) => {
-  const contract = new web3.eth.Contract(BeefyUniV2ZapABI, zapAddress);
+  const contract = new web3.eth.Contract(MochiUniV2ZapABI, zapAddress);
   const data = await _zapDeposit({
     contract,
     address,
@@ -39,21 +39,21 @@ const _zapDeposit = ({
   let transaction;
 
   if (isETH) {
-    console.log('beefInETH(vaultAddress, swapAmountOutMin)', vaultAddress, swapAmountOutMin);
-    transaction = contract.methods.beefInETH(vaultAddress, swapAmountOutMin).send({
+    console.log('mochiInETH(vaultAddress, swapAmountOutMin)', vaultAddress, swapAmountOutMin);
+    transaction = contract.methods.mochiInETH(vaultAddress, swapAmountOutMin).send({
       from: address,
       value: tokenAmount,
     });
   } else {
     console.log(
-      'beefIn(vaultAddress, swapAmountOutMin, tokenAddress, tokenAmount)',
+      'mochiIn(vaultAddress, swapAmountOutMin, tokenAddress, tokenAmount)',
       vaultAddress,
       swapAmountOutMin,
       tokenAddress,
       tokenAmount
     );
     transaction = contract.methods
-      .beefIn(vaultAddress, swapAmountOutMin, tokenAddress, tokenAmount)
+      .mochiIn(vaultAddress, swapAmountOutMin, tokenAddress, tokenAmount)
       .send({
         from: address,
       });

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Official frontend repo of [Mochi.Farm](https://app.Mochi.Farm).Yield farming optimizer.
+Official frontend repo of [Mochi.Farm](https://app.mochifarm.xyz).Yield farming optimizer.
 
 ## Env
 

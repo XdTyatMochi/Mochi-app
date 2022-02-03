@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       <div className={classes.column}>
-        <div className={classes.title}>mochi.farm</div>
+        <div className={classes.title}>mochifarm</div>
         <a
-          href="https://docs.Beefy.finance"
+          href="https://docs.mochifarm.xyz"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -24,18 +24,8 @@ const Footer = () => {
           <span>{t('docs')}</span>
         </a>
 
-        {/* <a
-          href="https://blog.Beefy.finance/articles"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.link}
-        >
-          <i className={`fas fa-file-alt ${classes.linkIcon}`} />
-          <span>{t('blog')}</span>
-        </a> */}
-
         <a
-          href="https://forum.Beefy.finance/"
+          href="https://forum.mochifarm.xyz/"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -58,7 +48,7 @@ const Footer = () => {
       <div className={classes.column}>
         <div className={classes.title}>{t('socials')}</div>
         <a
-          href="https://twitter.com/mochifarm"
+          href="https://twitter.com/mochifarmxyz"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}

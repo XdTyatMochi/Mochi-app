@@ -1,4 +1,4 @@
-import { BeefyUniV2ZapABI, uniswapV2RouterABI } from 'features/configure';
+import { MochiUniV2ZapABI, uniswapV2RouterABI } from 'features/configure';
 
 export const zapDepositEstimate = ({
   web3,
@@ -7,7 +7,7 @@ export const zapDepositEstimate = ({
   tokenAddress,
   tokenAmount,
 }) => {
-  const contract = new web3.eth.Contract(BeefyUniV2ZapABI, zapAddress);
+  const contract = new web3.eth.Contract(MochiUniV2ZapABI, zapAddress);
   return contract.methods.estimateSwap(vaultAddress, tokenAddress, tokenAmount).call();
   // { swapAmountIn uint256, swapAmountOut uint256, swapTokenOut address }
 };
