@@ -25,13 +25,13 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://forum.mochifarm.xyz/"
+          href="https://medium.mochifarm.xyz/"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
         >
           <i className={`fas fa-comments ${classes.linkIcon}`} />
-          <span>{t('forum')}</span>
+          <span>{t('medium')}</span>
         </a>
 
         <a

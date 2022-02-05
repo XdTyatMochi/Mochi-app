@@ -108,15 +108,15 @@ export const getNetworkConnectors = t => {
               description: t('Home-BrowserWallet'),
             },
           },
-          // walletconnect: {
-          //   package: WalletConnectProvider,
-          //   options: {
-          //     rpc: {
-          //       1: 'https://mainnet.boba.network/',
-          //       288: 'https://mainnet.boba.network/',
-          //     },
-          //   },
-          // },
+          walletconnect: {
+            package: WalletConnectProvider,
+            options: {
+              rpc: {
+                1: 'https://mainnet.boba.network/',
+                288: 'https://mainnet.boba.network/',
+              },
+            },
+          },
         },
       };
     default:

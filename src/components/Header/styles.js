@@ -232,7 +232,7 @@ const styles = theme => ({
     cursor: 'pointer',
     fontSize: '1rem',
     fontWeight: 400,
-    color: '#000',
+    color: theme.palette.text.primary,
     textDecoration: 'none',
     textTransform: 'lowercase',
     '&:hover': {
@@ -244,7 +244,7 @@ const styles = theme => ({
   },
   icon: {
     color: theme.palette.text.primary,
-    marginRight: '0.5rem',
+    marginRight: '0.6rem',
     textAlign: 'end',
   },
   iconButton: {

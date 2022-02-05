@@ -53,7 +53,7 @@ export default function Pools() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [address, web3, fetchBalances, fetchVaultsData]);
 
-  const chainNameLowercase = getNetworkFriendlyName().toLowerCase();
+  // const chainNameLowercase = getNetworkFriendlyName().toLowerCase();
 
   const activePoolCount = pools.filter(pool => pool.status === 'active').length;
 
