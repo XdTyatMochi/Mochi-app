@@ -119,7 +119,7 @@ export const bobaPools = [
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
-    oracleId: 'oolong-bnb-weth',
+    oracleId: 'oolong-usdc-weth',
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',

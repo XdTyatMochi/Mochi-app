@@ -86,7 +86,7 @@ export const LanguageDropdown = function ({ navLinkClass }) {
         <MenuItem divider button={false} className={classes.divider} />
         <MenuItem button={false}>
           <a
-            href="https://discord.gg/sj3drZd7dh"
+            href="https://discord.gg/"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.helpLink}

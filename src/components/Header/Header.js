@@ -50,6 +50,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
               <img
                 alt="MOCHI"
                 src={require(`images/Mochi-logo.svg`)}
+                href="https://mochifarm.xyz"
                 height={'40px'}
                 className={classes.logo}
               />
@@ -59,6 +60,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
               <img
                 alt="MOCHI"
                 src={require(`images/Mochi-logo.svg`)}
+                href="https://mochifarm.xyz"
                 height={'35px'}
                 className={classes.logo}
               />
